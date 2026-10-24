@@ -78,3 +78,64 @@ main{
     fill: white;
 }
 
+#overflow{
+    background-color: 00000070;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#gaveta{
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 16px;
+}
+
+#gaveta h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-criar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+#form-criar label{
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#form-criar input{
+    border: 2px solid #CCCCCC;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+#form-criar textarea{
+    border: 2px solid #CCCCCC;
+    height: 120px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+#form-criar button{
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ED107A;
+    color: white;
+    
+}
