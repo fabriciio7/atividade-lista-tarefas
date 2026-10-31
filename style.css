@@ -79,12 +79,20 @@ main{
 }
 
 #overflow{
-    background-color: 00000070;
+    background-color: #00000070;
     width: 100%;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 200ms;
+}
+
+#overflow.ativa{
+    opacity: 1;
+    visibility: visible;
 }
 
 #gaveta{
@@ -93,8 +101,12 @@ main{
     background-color: white;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -400px;
     padding: 16px;
+    transition-duration: 200ms;
+}
+#gaveta.ativa{
+    right: 0;
 }
 
 #gaveta h3{
@@ -138,4 +150,82 @@ main{
     background-color: #ED107A;
     color: white;
     
+}
+
+
+#form-criar button:hover{
+    background-color: #af0b5a;
+}
+
+#tarefas{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+}
+
+.tarefa{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tarefa p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.tarefa div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+
+.login{
+    height: 100vh;
+    background-color: #DEDEDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form{
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login form h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login form input{
+    height: 40px;
+    border: 2px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 16px;
+}
+.login form input:focus{
+    border-color: #ED107A;
+}
+
+.login form button{
+    height: 40px;
+    background-color: #ED107A;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.login form button:hover{
+    background-color: #af0b5a;
 }
